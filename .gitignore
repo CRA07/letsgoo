@@ -1,0 +1,4 @@
+*.xlsx
+*.lock
+__pycache__/
+config.json
