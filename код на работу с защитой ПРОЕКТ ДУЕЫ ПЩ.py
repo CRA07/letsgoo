@@ -205,15 +205,15 @@ def init_google_sheets():
     try:
         service_account_data = {
             "type": "service_account",
-            "project_id": "brakpoduction55",
+            "project_id": "brakpoduction",
             "private_key_id": config_data["private_key_id"],
             "private_key": config_data["private_key"].replace('\\n', '\n'),
-            "client_email": "brakgarantis55@brakpoduction55.iam.gserviceaccount.com",
-            "client_id": "111941743629865868932",
+            "client_email": "brakgarantis-311@brakpoduction.iam.gserviceaccount.com",
+            "client_id": "107810057448010554730",
             "auth_uri": "https://accounts.google.com/o/oauth2/auth",
             "token_uri": "https://oauth2.googleapis.com/token",
             "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/brakgarantis55%40brakpoduction55.iam.gserviceaccount.com",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/brakgarantis-311%40brakpoduction.iam.gserviceaccount.com",
             "universe_domain": "googleapis.com"
         }
 
@@ -409,6 +409,3 @@ if __name__ == "__main__":
     logger.info(f"Health check: http://{BIND_HOST}:{PORT}/health")
 
     app.run(host=BIND_HOST, port=PORT, debug=True)
-
-
-
